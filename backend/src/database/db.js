@@ -35,8 +35,8 @@ const initDb = () => {
 const seedDatabase = () => {
   // Insert your actual data here
   const userData = {
-    name: "Your Name",
-    email: "your.email@example.com"
+    name: "Vikrant",
+    email: "vikrant@example.com"
   };
   
   // Check if user already exists
@@ -109,11 +109,11 @@ const seedDatabase = () => {
               // Add project links
               db.run(
                 "INSERT INTO project_links (project_id, type, url) VALUES (?, ?, ?)",
-                [projectId, "github", "https://github.com/yourusername/ecommerce-platform"]
+                [projectId, "github", "https://github.com/vikrant/ecommerce-platform"]
               );
               db.run(
                 "INSERT INTO project_links (project_id, type, url) VALUES (?, ?, ?)",
-                [projectId, "live", "https://yourecommerceplatform.com"]
+                [projectId, "live", "https://vikrantecommerceplatform.com"]
               );
             }
           );
@@ -128,15 +128,15 @@ const seedDatabase = () => {
           // Insert links
           db.run(
             "INSERT INTO links (user_id, type, url) VALUES (?, ?, ?)",
-            [userId, "github", "https://github.com/yourusername"]
+            [userId, "github", "https://github.com/vikrant"]
           );
           db.run(
             "INSERT INTO links (user_id, type, url) VALUES (?, ?, ?)",
-            [userId, "linkedin", "https://linkedin.com/in/yourprofile"]
+            [userId, "linkedin", "https://linkedin.com/in/vikrant"]
           );
           db.run(
             "INSERT INTO links (user_id, type, url) VALUES (?, ?, ?)",
-            [userId, "portfolio", "https://yourportfolio.com"]
+            [userId, "portfolio", "https://vikrantportfolio.com"]
           );
         }
       );
